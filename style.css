@@ -1,0 +1,137 @@
+/* Reset basic styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  line-height: 1.6;
+}
+
+/* Navigation bar */
+header {
+  background-color: #111111;
+  padding: 15px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid #ffffff;
+}
+
+/* Hero section layout: side-by-side */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 40px;
+  background-color: #f2f2f2;
+   /* reduced from 40px */
+}
+
+
+/* Text block */
+.intro {
+  flex: 1;
+  max-width: 75%;
+}
+
+/* Name and title styling */
+.intro h1 {
+  font-size: 36px;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.intro h3 {
+  font-size: 24px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+
+/* Image container */
+.photo {
+  width: 250px;         /* increased from 100px */
+  height: 250px;        /* increased from 100px */
+  margin-right: 20px;
+  margin-left: -70px;   /* pulls it closer to the intro text */
+  flex-shrink: 0;
+}
+
+
+/* Image styling */
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+#experience ul {
+  padding-left: 20px;
+}
+#experience li {
+  margin-bottom: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #111;
+  padding: 15px 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* optional */
+}
+
+body {
+  margin: 0;
+  padding-top: 0px; /* ensures your content isn't hidden under the fixed navbar */
+}
+
+
+#contact {
+  background-color: #f9f9f9;
+}
+
+#contact h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+  color: #222;
+}
