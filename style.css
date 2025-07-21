@@ -83,8 +83,10 @@ nav ul li a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  
+    border-radius: 0 !important;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  
+
 }
 
 #experience ul {
@@ -93,16 +95,6 @@ nav ul li a:hover {
 #experience li {
   margin-bottom: 8px;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
